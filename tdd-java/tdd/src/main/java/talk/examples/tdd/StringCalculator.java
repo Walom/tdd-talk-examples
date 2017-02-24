@@ -15,18 +15,4 @@ package talk.examples.tdd;
 public class StringCalculator
 {
     public StringCalculator() {}
-
-    public int add(String input) {
-        if (input == "")
-            return 0;
-
-        int result = 0;
-
-        String[] numbers = input.split(",");
-
-        for (int i = 0; i < numbers.length; i++)
-            result += Integer.parseInt(numbers[i]);
-
-        return result;
-    }
 }
